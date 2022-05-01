@@ -1,0 +1,4 @@
+<div class="calculator">
+  <input type="text"  class="value" [(ngModel)]="value">
+  <span *ngFor="let item of calc" (click)="changeEvent(item.btn)" class="{{item.cls}}">{{item.btn}}</span>
+</div>
